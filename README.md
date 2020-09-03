@@ -1,8 +1,8 @@
 # Arithmetic Method AGL
 
-This is a `SageMath` script that computes the <img src="https://render.githubusercontent.com/render/math?math=E">-polynomial of the <img src="https://render.githubusercontent.com/render/math?math=\mathrm{AGL}_1(k)">-representation variety over a compact orientable surface of genus <img src="https://render.githubusercontent.com/render/math?math=g">, <img src="https://render.githubusercontent.com/render/math?math=\Sigma_g">. That is, the space of group homomorphisms
+This is a `SageMath` script that computes the <img src="https://render.githubusercontent.com/render/math?math=E">-polynomial of the <img src="https://render.githubusercontent.com/render/math?math=\mathrm{AGL}_1(\mathbb{C})">-representation variety over a compact orientable surface of genus <img src="https://render.githubusercontent.com/render/math?math=g">, <img src="https://render.githubusercontent.com/render/math?math=\Sigma_g">. That is, the space of group homomorphisms
 <center>
-<img src="https://render.githubusercontent.com/render/math?math=\rho: \pi_1(\Sigma_g) \to \mathrm{AGL}_1(k).">
+<img src="https://render.githubusercontent.com/render/math?math=\rho: \pi_1(\Sigma_g) \to \mathrm{AGL}_1(\mathbb{C}).">
 </center>
 
 The computation is performed by counting the number of points of the representation variety over the finite field of <img src="https://render.githubusercontent.com/render/math?math=q"> elements, <img src="https://render.githubusercontent.com/render/math?math=\mathbb{F}_q">.
@@ -19,7 +19,7 @@ From this calculation for surfaces of small genus, the existence of a Topologica
 
 The only prerequisite to run this script is to have installed a working `SageMath` engine. You can either install your local intepreter following [this instructions](https://doc.sagemath.org/html/en/installation/) or use an online interpreter as [CoCalc](https://cocalc.com/).
 
-Once started the `SageMath` interpreter, type
+To run the standalone version of this script, download the `ArithmeticMethodAGL.sage` source file. Once started the `SageMath` interpreter in the path of the file, type
 
     %run ArithmeticMethodAGL.sage
 
@@ -29,6 +29,10 @@ At this point, you can compute the <img src="https://render.githubusercontent.co
 For instance, for computing the <img src="https://render.githubusercontent.com/render/math?math=E">-polynomials up to genus <img src="https://render.githubusercontent.com/render/math?math=g = 3">, just type
 
     compute_polynomials(3)
+
+**Remark:** This computation may take lot of time.
+
+The repository also includes a `Jupyter notebook` version of the script. This version is optimized to work with `Cython`. To run it, download the `ArithmeticMethodAGL.ipynb` file. Then, open a Jypyter notebook by typing `jypyter notebook` in a terminal and open the downloaded file. The usage is analogous to the standalone version.
 
 ## References
 
